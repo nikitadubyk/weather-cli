@@ -2,7 +2,11 @@
     "name": "weather-node",
     "version": "1.0.0",
     "description": "cli for getting weather",
-    "main": "index.js",
+    "main": "weather.js",
+    "bin": {
+        "weather": "weather.js"
+    },
+    "type": "module",
     "scripts": {
         "start": "node index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +16,8 @@
         "weather"
     ],
     "author": "Nikita Dubyk",
-    "license": "ISC"
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.26.1"
+    }
 }
